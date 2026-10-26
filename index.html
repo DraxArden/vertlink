@@ -2937,7 +2937,7 @@ function hideAgentPop(){
 const ENV=(()=>{
   const q=new URLSearchParams(location.search);const ua=navigator.userAgent;
   const touch=navigator.maxTouchPoints>0;
-  const mobile=q.get('device')==='mobile'||(touch&&(/Android|iPhone|iPad|iPod|Mobile/i.test(ua)||(/Macintosh/.test(ua)&&navigator.maxTouchPoints>1)));
+  const mobile=q.get('device')==='mobile'||/Android|iPhone|iPad|iPod|Mobile/i.test(ua)||(/Macintosh/.test(ua)&&navigator.maxTouchPoints>1)||(touch&&matchMedia('(pointer: coarse)').matches&&Math.min(screen.width,screen.height)<820);
   const ios=/iPhone|iPad|iPod/.test(ua)||(/Macintosh/.test(ua)&&navigator.maxTouchPoints>1);
   return {mobile,ios,android:/Android/i.test(ua),hosted:location.protocol==='https:'||q.get('hosted')==='1',
     standalone:matchMedia('(display-mode: standalone)').matches||navigator.standalone===true};

@@ -1,6 +1,6 @@
 // VERTLINK service worker: rende l'app disponibile offline.
 // Le misure di rete (latenza, velocità, DNS, servizi) non passano mai dalla cache.
-const VERSION = 'vertlink-v1';
+const VERSION = 'vertlink-v2';
 const SHELL = ['./', 'index.html', 'manifest.webmanifest', 'icons/favicon.svg', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/maskable-512.png', 'icons/apple-touch-icon.png'];
 const STATIC_HOSTS = ['fonts.googleapis.com', 'fonts.gstatic.com', 'cdnjs.cloudflare.com', 'cdn.jsdelivr.net'];
 
