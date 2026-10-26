@@ -2996,6 +2996,7 @@ function init(){
   $('#btn-motion').addEventListener('click',()=>{MOTION=!MOTION;store.set('motion',MOTION);applyMotion()});
   $('#agent-pop').addEventListener('click',hideAgentPop);
   addEventListener('resize',placeTabInd);
+  addEventListener('load',placeTabInd);try{document.fonts.ready.then(placeTabInd)}catch{}
   $$('[data-lang-set]').forEach(b=>b.addEventListener('click',()=>{if(b.dataset.langSet===LANG)return;setLang(b.dataset.langSet);rerenderAll()}));
   applyTheme(store.get('theme','auto'));
   renderTabs();bindAgent();bindAlerts();bindSpeedHist();bindSvc();bindPcap();renderSvc();renderDevDetail();
