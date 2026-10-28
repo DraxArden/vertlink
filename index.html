@@ -1016,6 +1016,7 @@ button.pill{cursor:pointer;font-family:var(--f-body)}
 <footer data-i18n-block="footer">
   <p><strong>Cosa un browser non può vedere.</strong> Il traffico degli altri programmi e degli altri dispositivi passa dalla scheda di rete, a cui le pagine web non hanno accesso. Per questo le connessioni del sistema e la tabella ARP arrivano dai comandi già presenti nel computer, che incolli qui. Nessun dato incollato lascia il tuo computer, tranne i nomi risolti tramite DNS e i MAC inviati al servizio che identifica il produttore.</p>
   <p>Servizi usati: Cloudflare (latenza, velocità, DNS), Google (latenza, DNS), ipify e ipwho.is (IP pubblico, provider e posizione dei server), macvendors.com (produttore dai MAC). Storico, servizi e impostazioni restano in questo browser. Tieni la scheda in primo piano: in background il browser rallenta le misure.</p>
+  <p>Usa la scansione della rete e le catture solo sulla tua rete, o con il permesso di chi la gestisce. VERTLINK è fornito così com'è, senza garanzie, con licenza MIT.</p>
 </footer>
 </div>
 
@@ -1375,7 +1376,8 @@ const EN_BLOCKS={
 </div>
 <p><strong style="color:var(--ink)">If the browser asks for permission</strong> to access other apps or services on this device, allow it: that's the link between VERTLINK and the agent. The agent only listens on this computer (127.0.0.1) and only answers those who know the token. Its data stays in the folder shown in its window.</p>`,
 'footer':`<p><strong>What a browser can't see.</strong> Traffic from other programs and other devices goes through the network adapter, which web pages can't access. That's why system connections and the ARP table come from commands already on your computer, which you paste here, or from the local agent. No pasted data leaves your computer, except names resolved via DNS and MAC addresses sent to the vendor lookup service.</p>
-<p>Services used: Cloudflare (latency, speed, DNS), Google (latency, DNS), ipify and ipwho.is (public IP, provider and server locations), macvendors.com (vendor from MAC). History, services and settings stay in this browser. Keep the tab in the foreground: in the background the browser slows measurements down.</p>`,
+<p>Services used: Cloudflare (latency, speed, DNS), Google (latency, DNS), ipify and ipwho.is (public IP, provider and server locations), macvendors.com (vendor from MAC). History, services and settings stay in this browser. Keep the tab in the foreground: in the background the browser slows measurements down.</p>
+<p>Use network scanning and captures only on your own network, or with permission from whoever manages it. VERTLINK is provided as is, without warranty, under the MIT license.</p>`,
 };
 // motore
 const ENP=Object.keys(EN).filter(k=>/\{\d+\}/.test(k)).map(k=>{const lit=k.replace(/\{\d+\}/g,'').length;const re=new RegExp('^'+k.replace(/[.*+?^$()|[\]\\]/g,'\\$&').replace(/\{\d+\}/g,'(.+?)')+'$');return {re,en:EN[k],lit,nodot:!k.includes('·')}}).sort((a,b)=>b.lit-a.lit);
