@@ -28,7 +28,7 @@ Phones don't allow programs like the agent and don't expose Wi‑Fi details to t
 
 ## Privacy
 
-Everything you paste and all history stays in your browser. To measure, the page contacts Cloudflare, Google, ipify and ipwho.is (public IP and location), and macvendors.com (device vendor from MAC).
+Everything you paste and all history stays in your browser. The online version counts visits anonymously with [GoatCounter](https://www.goatcounter.com/), without cookies or personal data: only page opens and a few actions (speed test, app install, agent download). The downloaded `vertlink.html` file counts nothing. To measure, the page contacts Cloudflare, Google, ipify and ipwho.is (public IP and location), and macvendors.com (device vendor from MAC).
 
 ## Responsible use
 
@@ -40,7 +40,7 @@ Download the package only from this repository or from the VERTLINK page. These 
 
 | File | SHA-256 |
 |---|---|
-| `VERTLINK.zip` | `d0878892cb9fe1cd0031fbac259e2f661e7fb95f9758f694739c2497017485a4` |
+| `VERTLINK.zip` | `ada1d0f7c1f52c950c4a718b38a03bedc09184a2321359c3fd4def3045bacf6d` |
 | `vertlink-agent-linux-amd64` | `0bb7e333098af072e75bd0b6e07fcbefe72540047dee061831b2a548c60fbc70` |
 | `vertlink-agent-linux-arm64` | `115faaa386e736fecf74c3f01eac697b55bcd92839efba3933b107c63a50e4c1` |
 | `vertlink-agent-mac-apple-silicon` | `bdc8861a8be2c5f7349639f44ba1ab9bb085b5182bf11db9605727efa2dbefda` |
@@ -69,6 +69,6 @@ Analizzatore di rete che funziona nel browser, senza installare nulla, e si inst
 - **Android (Chrome):** apri la pagina e tocca **Installa app**, oppure menu ⋮ › **Installa app**.
 - **iPhone (Safari):** tocca **Condividi** › **Aggiungi alla schermata Home**.
 
-Per la scansione della rete locale e la latenza del router usa il file `vertlink.html` del [pacchetto da scaricare](download/VERTLINK.zip) oppure l'agente locale. Tutti i dati restano nel tuo browser.
+Per la scansione della rete locale e la latenza del router usa il file `vertlink.html` del [pacchetto da scaricare](download/VERTLINK.zip) oppure l'agente locale. Tutti i dati restano nel tuo browser. La versione online conta le visite in forma anonima con GoatCounter, senza cookie né dati personali; il file `vertlink.html` scaricato non conta nulla.
 
 Usa la scansione della rete e le catture solo sulla tua rete, o con il permesso di chi la gestisce. Scarica il pacchetto solo da qui e verifica le impronte SHA-256 indicate sopra. Licenza MIT: VERTLINK è fornito così com'è, senza garanzie.
