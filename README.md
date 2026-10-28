@@ -40,7 +40,7 @@ Download the package only from this repository or from the VERTLINK page. These 
 
 | File | SHA-256 |
 |---|---|
-| `VERTLINK.zip` | `091e500c37f8b6fe7de94b760ae918dc77cf272c51f7f33a6f7594af496f5256` |
+| `VERTLINK.zip` | `d0878892cb9fe1cd0031fbac259e2f661e7fb95f9758f694739c2497017485a4` |
 | `vertlink-agent-linux-amd64` | `0bb7e333098af072e75bd0b6e07fcbefe72540047dee061831b2a548c60fbc70` |
 | `vertlink-agent-linux-arm64` | `115faaa386e736fecf74c3f01eac697b55bcd92839efba3933b107c63a50e4c1` |
 | `vertlink-agent-mac-apple-silicon` | `bdc8861a8be2c5f7349639f44ba1ab9bb085b5182bf11db9605727efa2dbefda` |
